@@ -7,6 +7,7 @@ import Course from './components/Course';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import { Toaster } from 'react-hot-toast';
+import Marks from './components/Marks';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
     <div>
     <Navbar/>
     <Home/>
+    <Marks/>
     <About/>
     <Tools/>
     <Course/>

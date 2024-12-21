@@ -55,37 +55,35 @@ const Course = () => {
       ]
   return (
     <>
-    <div name="Courses" className='max-w-screen-2xl container mx-auto px-4 md:px-20 my-16'>
-    <div>
-    <h1 className='text-3xl font-bold mb-5'>Courses</h1>
-    <span className='font-semibold'>Featured Courses</span>
-    <div className='grid grid-cols-2 overflow-hidden md:grid-cols-6 gap-3 my-5'>
-    {
-        cardItem.map(({id,logo,name,description,link})=>(
-          <div className='   md: w-[200px] md: h-[200px] border rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300' key={id}>
-                <a href={link} target="blank">
-                  <img src={logo}  className='w-[120px] h-[120px] p-1 rounded-full border-[2px] ' alt=""  />
-                  <div>
-                  
-                    <div className='font-bold'>{name}</div>
-                    <p className='text-wrap text-sm'> {description}</p>
-                    
-                    
-                  </div>
-                  </a>
-                  
-
-
-            
+    <div name="Courses" className="max-w-screen-2xl container mx-auto px-4 md:px-20 my-16">
+  <div>
+    <h1 className="text-3xl font-bold mb-5">Courses</h1>
+    <span className="font-semibold">Featured Courses</span>
+    {/* Responsive grid setup */}
+    <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 my-5">
+      {cardItem.map(({ id, logo, name, description, link }) => (
+        <div
+          className="w-full border rounded-lg shadow-lg p-4 cursor-pointer hover:scale-110 duration-300"
+          key={id}
+        >
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={logo}
+              className="w-[120px] h-[120px] p-2 rounded-full border-2 mx-auto"
+              alt={name}
+            />
+            <div className="mt-3 text-center">
+              <div className="font-bold">{name}</div>
+              <p className="text-sm text-gray-600">{description}</p>
             </div>
-        ))
-      }
+          </a>
+        </div>
+      ))}
     </div>
-    </div>
-    
-    </div>
+  </div>
+  <hr />
+</div>
 
-    <hr />
     </>
   )
 }

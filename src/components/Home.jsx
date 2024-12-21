@@ -38,7 +38,7 @@ const Home = () => {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              Hi i'm Sachin and i am developer. In this website you can get amaning websits links and tools. 
+              Hi i'm  developer. In this website you can get amazing websits links and tools. 
               You want watch latest movies that link also we provided you. Best coding videos and projects link ,blog for coding 
               technical news and information , coding course , hacking tips etc  you can get in this website keep searching...
             </p>
@@ -50,12 +50,12 @@ const Home = () => {
               <h1 className="font-bold">Available On</h1>
               <ul className="flex space-x-3"> 
               <li>
-                <a href="https://www.facebook.com/sachin.merwade.770" target="blank">
+                <a href="/" target="blank">
               <FaFacebook className="text-2xl cursor-pointer"/>
               </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/sachin.merwade/" target="blank">
+                <a href="/" target="blank">
                 <FaInstagram className="text-2xl cursor-pointer"/>
                 </a>
               </li>

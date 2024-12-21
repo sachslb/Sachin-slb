@@ -16,6 +16,10 @@ const navbar = () => {
       text:'Home'
     },
     {
+      id:6,
+      text:'PassMarks'
+    },
+    {
       id:2,
       text:'About'
     },
