@@ -22,7 +22,7 @@ import pic from "../../public/logo.jpeg"
 const Home = () => {
   return (
     <>
-      <div 
+     <div 
   name="Home" 
   className="relative w-full bg-cover bg-center pt-16" 
   style={{ backgroundImage: `url(${pic})` }}
@@ -35,8 +35,8 @@ const Home = () => {
     <div className="flex flex-col md:flex-row">
       {/* Text Content Section */}
       <div className="md:w-1/2 mt-12 md:mt-24 space-y-4 order-2 md:order-1">
-        <span className="text-xl">Welcome To My Feed</span>
-        <div className="flex flex-wrap items-center space-x-2 text-2xl md:text-4xl">
+        <span className="text-sm md:text-lg">Welcome To My Feed</span>
+        <div className="flex flex-wrap items-center space-x-2 text-xl md:text-3xl lg:text-4xl">
           <h1>Hello, I'm a</h1>
           <ReactTyped
             className="text-red-500 font-bold"
@@ -46,7 +46,7 @@ const Home = () => {
             loop={true}
           />
         </div>
-        <p className="text-sm md:text-md text-justify">
+        <p className="text-xs md:text-sm lg:text-md text-justify">
           Hi, I'm a developer. On this website, you can find amazing website links and tools. If you want to watch the latest movies, 
           we provide those links too. Discover the best coding videos, project links, blogs for coding, technical news and 
           information, coding courses, hacking tips, and much more. Keep exploring!
@@ -54,21 +54,21 @@ const Home = () => {
         {/* Social Media and Technologies */}
         <div className="flex justify-between">
           <div className="space-y-2">
-            <h1 className="font-bold">Available On</h1>
+            <h1 className="text-sm md:text-md lg:text-lg font-bold">Available On</h1>
             <ul className="flex space-x-3">
-              <li><a href="/" target="blank"><FaFacebook className="text-2xl cursor-pointer" /></a></li>
-              <li><a href="/" target="blank"><FaInstagram className="text-2xl cursor-pointer" /></a></li>
-              <li><a href="https://www.linkedin.com/in/sachinmerwade/" target="blank"><IoLogoLinkedin className="text-2xl cursor-pointer" /></a></li>
-              <li><a href="/" target="blank"><IoLogoYoutube className="text-2xl cursor-pointer" /></a></li>
+              <li><a href="/" target="blank"><FaFacebook className="text-lg md:text-2xl cursor-pointer" /></a></li>
+              <li><a href="/" target="blank"><FaInstagram className="text-lg md:text-2xl cursor-pointer" /></a></li>
+              <li><a href="https://www.linkedin.com/in/sachinmerwade/" target="blank"><IoLogoLinkedin className="text-lg md:text-2xl cursor-pointer" /></a></li>
+              <li><a href="/" target="blank"><IoLogoYoutube className="text-lg md:text-2xl cursor-pointer" /></a></li>
             </ul>
           </div>
           <div className="space-y-2">
-            <h1 className="font-bold">Currently Working On</h1>
+            <h1 className="text-sm md:text-md lg:text-lg font-bold">Currently Working On</h1>
             <div className="flex space-x-5">
-              <BiLogoMongodb className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
-              <IoLogoReact className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
-              <IoLogoNodejs className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
-              <SiExpress className="text-xl md:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+              <BiLogoMongodb className="text-sm md:text-xl lg:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+              <IoLogoReact className="text-sm md:text-xl lg:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+              <IoLogoNodejs className="text-sm md:text-xl lg:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
+              <SiExpress className="text-sm md:text-xl lg:text-3xl hover:scale-110 duration-200 rounded-full border-[2px]" />
             </div>
           </div>
         </div>
@@ -78,6 +78,7 @@ const Home = () => {
     </div>
   </div>
 </div>
+
 
 
 
