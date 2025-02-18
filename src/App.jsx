@@ -16,7 +16,7 @@ const App = () => {
     <div>
     <Navbar/>
     <Home/>
-    <Marks/>
+    
     <About/>
     <Tools/>
     <Course/>
